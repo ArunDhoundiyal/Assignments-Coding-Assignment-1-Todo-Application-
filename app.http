@@ -1,0 +1,41 @@
+GET http://localhost:7000/todos/?category=WORK&priority=LOW
+
+###
+
+GET http://localhost:7000/todos/2/
+
+###
+
+GET http://localhost:7000/agenda/?date=2021-04-02
+###
+
+
+POST http://localhost:7000/todos/
+Content-Type: application/json
+
+{
+  "id":1,
+  "todo": "Id number one",
+  "priority": "HIGH",
+  "status": "IN PROGRESS",
+  "category": "HOME",
+  "dueDate": "2020-9-9"
+}
+
+###
+
+PUT http://localhost:7000/todos/4/
+Content-Type: application/json
+
+
+{
+  "todo": "Hello my name is Arun Dhoundiyal",
+  "priority": "LOW",
+  "status": "DONE",
+  "category": "WORK",
+  "dueDate": "2025-2-9"
+}
+
+###
+
+DELETE http://localhost:7000/todos/1/
